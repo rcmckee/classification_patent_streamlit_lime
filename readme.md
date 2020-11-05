@@ -29,13 +29,11 @@ The stop_words_ attribute can get large and increase the model size when picklin
 5) follow https://docs.streamlit.io/en/stable/getting_started.html
 
 6) Next, import Streamlit.
+
 To make things easier later, we're also importing numpy and pandas for working with sample data.
-
-    import streamlit as st \n
-    import numpy as np \n
-    import pandas as pd \n
-
-
+    import streamlit as st
+    import numpy as np
+    import pandas as pd
 
 7) Run your app. A new tab will open in your default browser. It’ll be blank for now. That’s OK.
 
@@ -45,7 +43,7 @@ To make things easier later, we're also importing numpy and pandas for working w
 
 9) create first app: https://docs.streamlit.io/en/stable/getting_started.html
 
-10) put on GitHub https://docs.streamlit.io/en/stable/deploy_streamlit_app.html
+10)  put on GitHub https://docs.streamlit.io/en/stable/deploy_streamlit_app.html
 Make sure it’s in a public folder and that you have a requirements.txt file
 
 If you need to generate a requirements file, try using pipreqs
