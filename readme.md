@@ -23,8 +23,11 @@ The stop_words_ attribute can get large and increase the model size when picklin
 *** might need to $ pip install --upgrade protobuf
 
 3) create new folder
+   
 4) create first_app.py file and open with editor
+
 5) follow https://docs.streamlit.io/en/stable/getting_started.html
+
 6) Next, import Streamlit.
 To make things easier later, we're also importing numpy and pandas for working with sample data.
 
@@ -33,9 +36,9 @@ To make things easier later, we're also importing numpy and pandas for working w
     import pandas as pd
 
 
-1) Run your app. A new tab will open in your default browser. It’ll be blank for now. That’s OK.
+7) Run your app. A new tab will open in your default browser. It’ll be blank for now. That’s OK.
 
-streamlit run first_app.py
+    streamlit run first_app.py
 
 8) You can kill the app at any time by typing Ctrl+c in the terminal.
 
