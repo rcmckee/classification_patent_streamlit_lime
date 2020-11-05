@@ -26,15 +26,14 @@ The stop_words_ attribute can get large and increase the model size when picklin
 4) create first_app.py file and open with editor
 5) follow https://docs.streamlit.io/en/stable/getting_started.html
 6) Next, import Streamlit.
-* To make things easier later, we're also importing numpy and pandas for
-* working with sample data.
+To make things easier later, we're also importing numpy and pandas for working with sample data.
 
     import streamlit as st
     import numpy as np
     import pandas as pd
 
 
-7) Run your app. A new tab will open in your default browser. It’ll be blank for now. That’s OK.
+1) Run your app. A new tab will open in your default browser. It’ll be blank for now. That’s OK.
 
 streamlit run first_app.py
 
