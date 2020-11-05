@@ -1,3 +1,19 @@
+0-1) This assumes you have saved a trained model as a pickle file. If you are using Tfidf, then note: 
+Notes
+
+The stop_words_ attribute can get large and increase the model size when pickling. This attribute is provided only for introspection and can be safely removed using delattr or set to None before pickling. 
+'''
+vectorizer = TfidfVectorizer()
+X = vectorizer.fit_transform(corpus)
+vectorizer.stop_words_ = None
+
+import pickle
+# save tfidf as pickle
+pickle.dump( vectorizer, open( "tfidf_small.pkl", "wb" ) )
+# open pickle file
+tfidf = pickle.load( open( "tfidf_small.pkl", "rb" ) )
+'''
+
 0) install streamlit
 $ pip install streamlit
 $ streamlit hello     <-- check if it's working
