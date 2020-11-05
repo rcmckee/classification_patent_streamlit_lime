@@ -34,6 +34,7 @@ To make things easier later, we're also importing numpy and pandas for working w
     import streamlit as st
     import numpy as np
     import pandas as pd
+    
 
 
 7) Run your app. A new tab will open in your default browser. It’ll be blank for now. That’s OK.
