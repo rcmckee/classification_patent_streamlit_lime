@@ -31,10 +31,10 @@ The stop_words_ attribute can get large and increase the model size when picklin
 6) Next, import Streamlit.
 To make things easier later, we're also importing numpy and pandas for working with sample data.
 
-    import streamlit as st
-    import numpy as np
-    import pandas as pd
-    
+    import streamlit as st \n
+    import numpy as np \n
+    import pandas as pd \n
+
 
 
 7) Run your app. A new tab will open in your default browser. It’ll be blank for now. That’s OK.
