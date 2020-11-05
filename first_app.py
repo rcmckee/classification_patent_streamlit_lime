@@ -24,7 +24,8 @@ tfidf = pickle.load(open('tfidfsmall.pkl','rb'))
 #     return predicted_class
 
 
-st.title('Patent Classification\n Streamlit Share And LIME Visualization')
+st.title('Patent Classification') 
+st.title('Streamlit Share And LIME Visualization')
 
 txt = st.text_area('Text to analyze', '''1. A computer-implemented method comprising:
           acquiring, by a computing system, real-time image data depicting at least a portion of a face of a user of the computing system;
