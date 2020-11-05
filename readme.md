@@ -20,7 +20,7 @@ The stop_words_ attribute can get large and increase the model size when picklin
     $ pip install streamlit
     $ streamlit hello
 
-*** might need to $ pip install --upgrade protobuf
+Note: might need to $ pip install --upgrade protobuf
 
 3) create new folder
    
@@ -31,6 +31,7 @@ The stop_words_ attribute can get large and increase the model size when picklin
 6) Next, import Streamlit.
 
 To make things easier later, we're also importing numpy and pandas for working with sample data.
+
     import streamlit as st
     import numpy as np
     import pandas as pd
