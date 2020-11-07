@@ -1,26 +1,26 @@
 1) This assumes you have saved a trained model as a pickle file. If you are using Tfidf, then note: 
-Notes
 
-The stop_words_ attribute can get large and increase the model size when pickling. This attribute is provided only for introspection and can be safely removed using delattr or set to None before pickling. 
+    *Notes: The stop_words_ attribute can get large and increase the model size when pickling. This attribute is provided only for introspection and can be safely removed using delattr or set to None before pickling. 
 
-    vectorizer = TfidfVectorizer()
-    X = vectorizer.fit_transform(corpus)
-    vectorizer.stop_words_ = None
+        vectorizer = TfidfVectorizer()
+        X = vectorizer.fit_transform(corpus)
+        vectorizer.stop_words_ = None
 
-    import pickle
-    
-    # save tfidf as pickle
-    pickle.dump( vectorizer, open( "tfidf_small.pkl", "wb" ) )
-    
-    # open pickle file
-    tfidf = pickle.load( open( "tfidf_small.pkl", "rb" ) )
+        import pickle
+
+        pickle.dump( vectorizer, open( "tfidf_small.pkl", "wb" ) )  # save tfidf as pickle
+
+        tfidf = pickle.load( open( "tfidf_small.pkl", "rb" ) ) # open pickle file
 
 
 2) install streamlit
-    $ pip install streamlit
-    $ streamlit hello
 
-Note: might need to $ pip install --upgrade protobuf
+        $ pip install streamlit
+        $ streamlit hello
+
+    *Note: you might need to install
+    
+        $ pip install --upgrade protobuf
 
 3) create new folder
    
@@ -28,29 +28,27 @@ Note: might need to $ pip install --upgrade protobuf
 
 5) follow https://docs.streamlit.io/en/stable/getting_started.html
 
-6) Next, import Streamlit.
+6) Next, import Streamlit. To make things easier later, we're also importing numpy and pandas for working with sample data.
 
-To make things easier later, we're also importing numpy and pandas for working with sample data.
-
-    import streamlit as st
-    import numpy as np
-    import pandas as pd
+        import streamlit as st
+        import numpy as np
+        import pandas as pd
 
 7) Run your app. A new tab will open in your default browser. It’ll be blank for now. That’s OK.
 
-    streamlit run first_app.py
+        $ streamlit run first_app.py
 
 8) You can kill the app at any time by typing Ctrl+c in the terminal.
 
-9) create first app: https://docs.streamlit.io/en/stable/getting_started.html
+9) Create first app: https://docs.streamlit.io/en/stable/getting_started.html
 
-10)  put on GitHub https://docs.streamlit.io/en/stable/deploy_streamlit_app.html
-Make sure it’s in a public folder and that you have a requirements.txt file
+10)  Put on GitHub https://docs.streamlit.io/en/stable/deploy_streamlit_app.html
+    *Make sure it’s in a public folder and that you have a requirements.txt file
 
-If you need to generate a requirements file, try using pipreqs
+    *If you need to generate a requirements file, try using pipreqs
 
-    pip install pipreqs
-    pipreqs /home/project/location
+        pip install pipreqs
+        pipreqs /home/project/location
 
 running $ pipreqs in terminal in the active directory for the app will create a requirements.txt file that only has the libraries you pip installed.
 
