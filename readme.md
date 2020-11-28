@@ -1,3 +1,5 @@
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/rcmckee/classification_patent_streamlit_lime/first_app.py)
+
 1) This assumes you have saved a trained model as a pickle file. If you are using Tfidf, then note: 
 
     *Notes: The stop_words_ attribute can get large and increase the model size when pickling. This attribute is provided only for introspection and can be safely removed using delattr or set to None before pickling. 
